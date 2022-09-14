@@ -1,0 +1,7 @@
+import random
+import math
+nombre = random.randint(1,100)
+print('Bonjour, le but du jeux est de deviner le nombre choisi entre 1-100 par le systeme en le moin de coup possible:')
+le_nombre_de_essai = 0
+while le_nombre_de_essai < 50:
+    
