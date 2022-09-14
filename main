@@ -1,3 +1,6 @@
+#fait le 9 sept 2022 par Enoch immanuel wang 401
+# ce code est fait par Enoch, et tous autre copie est un plagiat loi L 122-4 
+#ce programme consiste à compter le nombre de mot dans une phrase
 #Word_count
 #on crée un input pour qu'une personne écris une phrase
 sentenceX = input("Bonjour, écris une phrase:")
