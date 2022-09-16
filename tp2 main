@@ -1,7 +1,26 @@
 import random
 import math
-nombre = random.randint(1,100)
-print('Bonjour, le but du jeux est de deviner le nombre choisi entre 1-100 par le systeme en le moin de coup possible:')
-le_nombre_de_essai = 0
-while le_nombre_de_essai < 50:
-    
+NOMBRE = random.randint(1,100)
+le_nombre_de_essai = 1
+maxessai = 10
+tryy = 1
+#print(NOMBRE)
+x = 0
+print('Bonjour, le but du jeux est de deviner le nombre choisi entre 1-100 par le systeme en le moin de coup possible, vous avez 10 chance au max')
+while x != NOMBRE and le_nombre_de_essai <= maxessai:
+    x = int(input("Entrez votre nombre:"))
+    if int(x) > NOMBRE:
+        y = le_nombre_de_essai + tryy
+        print("Votre nombre est plus grand que celui de l'ordi!")
+        print(" Vous êtes à",y,"nombres d'essais")
+    elif int(x) < NOMBRE:
+        y = le_nombre_de_essai + tryy
+        print("Votre nombre est plus petit que celui de l'ordi!")
+        print(" Vous êtes à", y, "nombres d'essais")
+    else:
+        print('Vous avez deviner le nombre, lol vous êtes trop fort!')
+        print("Vous avez utiliser",y,"nombre d'essaie")
+        le_nombre_de_essai += 1
+if le_nombre_de_essai > maxessai and x != NOMBRE:
+    print("ah rip vous avez utiliser tous vos essaie, vous êtes pas très bon, get good, recommencer!")
+
