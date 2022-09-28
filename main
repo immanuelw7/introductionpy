@@ -1,17 +1,20 @@
 #fait le 9 sept 2022 par Enoch immanuel wang 401
-# ce code est fait par Enoch, et tous autre copie est un plagiat loi L 122-4 
+#Ce code est fait par Enoch, et tous autre copie est un plagiat loi L 122-4
 #ce programme consiste à compter le nombre de mot dans une phrase
 #Word_count
 #on crée un input pour qu'une personne écris une phrase
 sentenceX = input("Bonjour, écris une phrase:")
 #on print l'information émise npar la personne
 print(sentenceX)
-#on define une fonction main
-def count_word(str):
-    #on crée une variable qui permet de split le sting en une liste
-    count = sentenceX.split()
+#on define une function qu'on appelle count-word on stock phrase dedans
+def count_word(phrase):
+    #on crée une variable qui permet de split le sting en une liste qui va être phrase.split
+    count = phrase.split()
     #on créee une variable afin de faire un len pour compter les espaces
     wordCount = len(count)
-    #on print la phrase afin de dire le nombre de mot dans une phrase.
-    print("Le nombre de mot dans cette phrase est:", wordCount)
-count_word(str)
+    #on retourne la valeur qui est le nombre de mot dans la phrase len
+    return wordCount
+    #crée une variable qui va être chiffre de nombre de mots, de plus l'ordi va lire cette ligne avant  de rentre dans le def
+chiffre = count_word(sentenceX)
+#print la valeur du nombre de mot
+print("Le nombre de mot dans cette phrase est:", chiffre)
